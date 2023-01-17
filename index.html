@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <style>
+        @media screen and (max-width: 767px) {}
+
+        .header {
+
+            display: flex;
+            flex: 0 0 content;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 125px 0px 125px;
+            padding: 10px;
+
+
+
+        }
+
+        .header_nav ul {
+
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+
+            width: 327px;
+            height: 32px;
+            padding: 10px;
+
+
+        }
+
+        .header_nav li {
+
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            line-height: 18px;
+
+
+            color: #696871;
+            list-style-type: none;
+
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .nav_item a {
+            text-decoration: none;
+            color: #696871;
+
+        }
+
+
+        .header_buttom {
+            width: 211px;
+            height: 60px;
+
+            background: #FF7143;
+            border: #FF7143;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .section_subscription {
+
+            display: flex;
+            flex: 0 0 content;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 125px;
+            padding: 15px;
+
+        }
+
+        .subscription_image img {
+            width: 40vw;
+            height: 644px;
+
+        }
+
+        .subscription {
+            width: 459px;
+            height: 461px;
+        }
+
+        .subscription h1 {
+            font-family: 'DMSans';
+            font-size: 80px;
+            line-height: 77px;
+
+            letter-spacing: -2.50105px;
+
+            color: #19191B;
+
+        }
+
+        .subscription p {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+
+
+            letter-spacing: -0.625263px;
+
+            color: #696871;
+        }
+
+        .main_buttom {
+            width: 211px;
+            height: 60px;
+            margin-top: 10px;
+
+
+            cursor: pointer;
+            background: #5454D4;
+            border: #5454D4;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .icon {
+
+            display: flex;
+            flex: 0 0 content;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0px 125px 0px 125px;
+            padding: 20px;
+
+        }
+
+        .benchmarks p {
+            font-family: 'DMSans';
+            font-size: 24px;
+            line-height: 36px;
+
+
+            text-align: center;
+            letter-spacing: -0.750316px;
+
+            color: #19191B;
+        }
+
+        .pricing p {
+            font-family: 'DMSans';
+            font-size: 24px;
+            line-height: 36px;
+
+
+            text-align: center;
+            letter-spacing: -0.750316px;
+
+            color: #19191B;
+
+        }
+
+        .retention p {
+            font-family: 'DMSans';
+            font-size: 24px;
+            line-height: 36px;
+
+
+            text-align: center;
+            letter-spacing: -0.750316px;
+
+            color: #19191B;
+
+        }
+
+        .retention img {
+            width: 154px;
+            height: 97px;
+        }
+
+        .pricing img {
+            width: 154px;
+            height: 97px;
+        }
+
+        .benchmarks img {
+            width: 154px;
+            height: 97px;
+        }
+
+        .product {
+            margin: 0px 125px 0px 125px;
+            padding: 20px;
+
+        }
+
+        .product_h2 {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 0px;
+
+        }
+
+        .product_h2 h2 {
+            width: 523px;
+            height: 140px;
+            font-family: 'DMSans';
+            font-size: 60px;
+            line-height: 70px;
+
+
+            letter-spacing: -1.87579px;
+
+            color: #19191B;
+
+        }
+
+        .button_set {
+
+            display: flex;
+            width: 365px;
+            height: 65px;
+        }
+
+        .button1,
+        .button2 {
+            width: 365px;
+            height: 65px;
+            border-radius: 5px;
+        }
+
+        .button1 {
+            font-family: 'DMSans';
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: -0.500211px;
+
+            color: #FFFFFF;
+
+            background: #5454D4;
+            border: #5454D4;
+            cursor: pointer;
+
+        }
+
+        .button2 {
+            font-family: 'DMSans';
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: -0.500211px;
+            background-color: #F8F8F8;
+            border: white;
+
+            color: #19191B;
+            cursor: pointer;
+        }
+
+        .rate {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+
+        }
+
+        .rate1 {
+            background-color: #F8F8F8;
+            width: 330px;
+            height: 441px;
+            margin-top: 15px;
+
+            border-radius: 10px;
+        }
+
+        .rate1 h3 {
+            font-family: 'DMSans';
+            font-size: 60px;
+            line-height: 56px;
+
+
+            text-align: center;
+            letter-spacing: -1.03448px;
+
+            color: #1D293F;
+
+        }
+
+        .rate1 p {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 50px;
+            /* or 294% */
+
+            text-align: center;
+            letter-spacing: -0.531474px;
+
+            color: #696871;
+
+        }
+
+        .rate2 {
+            background-color: #FF7143;
+            width: 376px;
+            height: 473px;
+
+            border-radius: 10px;
+        }
+
+        .rate2 h3 {
+            font-family: 'DMSans';
+            font-size: 60px;
+            line-height: 56px;
+
+
+            text-align: center;
+            letter-spacing: -1.03448px;
+
+            color: #FFFFFF;
+        }
+
+        .rate2 p {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 50px;
+            /* or 294% */
+
+            text-align: center;
+            letter-spacing: -0.531474px;
+
+            color: #FFFFFF;
+
+        }
+
+        .rate3 {
+            background-color: #F8F8F8;
+            width: 330px;
+            height: 441px;
+            margin-top: 15px;
+
+            border-radius: 10px;
+        }
+
+        .rate3 h3 {
+            font-family: 'DMSans';
+            font-size: 60px;
+            line-height: 56px;
+
+
+            text-align: center;
+            letter-spacing: -1.03448px;
+
+            color: #1D293F;
+        }
+
+        .rate3 p {
+            font-family: 'Mulish';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 50px;
+
+
+            text-align: center;
+            letter-spacing: -0.531474px;
+
+            color: #696871;
+
+        }
+
+        .ratebutton {
+            width: 285px;
+            height: 60px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            background: white;
+            border: white;
+            color: #5454D4;
+            cursor: pointer;
+        }
+
+        .buttonrate2 {
+            width: 285px;
+            height: 60px;
+            margin-left: 30px;
+            margin-top: 15px;
+            background: #8c3c21;
+            border-radius: 10px;
+            border: #8c3c21;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">
+            <img src="/assets/image/Logo.svg" alt="Logoipsum">
+        </div>
+
+        <nav class="header_nav">
+            <ul>
+                <li class="nav_item"><a href="#">Home</a></li>
+                <li class="nav_item"><a href="#">Features</a></li>
+                <li class="nav_item"><a href="#">Pricing</a></li>
+                <li class="nav_item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+
+
+        <button class="header_buttom">Get Started</button>
+
+    </header>
+    <main>
+        <section class="section_subscription">
+            <div class="subscription">
+                <h1>Grow your
+                    subscription
+                    business</h1>
+                <p>Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business
+                    end-to-end.</p>
+                <button class="main_buttom">Get Started</button>
+            </div>
+            <div class="subscription_image">
+                <img src="assets/image/Fon.png" alt="logoipsum">
+            </div>
+        </section>
+        <section class="icon">
+            <div class="benchmarks">
+                <img src="assets/image/Benchmarks.png" alt="Benchmarks">
+                <p>Benchmarks</p>
+            </div>
+            <div class="pricing">
+                <img src="assets/image/Pricing.png" alt="Pricing Audit">
+                <p>Pricing Audit</p>
+            </div>
+            <div class="retention">
+                <img src="assets/image/Retention.png" alt="Retention Audit">
+                <p>Retention Audit</p>
+            </div>
+
+        </section>
+        <section class="product">
+            <div class="product_h2">
+                <h2>Get the right plan for future product.</h2>
+                <div class="button_set">
+                    <button class="button1">Yearly</button>
+                    <button class="button2">Monthly</button>
+                </div>
+            </div>
+            <div class="rate">
+                <div class="rate1">
+                    <h3>Free</h3>
+                    <p>1 Website</p>
+                    <p> 5GB Hosting</p>
+                    <p>Limited Support</p>
+                    <button class="ratebutton">Get Started</button>
+                </div>
+                <div class="rate2">
+                    <h3>$29/month</h3>
+                    <p>10 Website</p>
+                    <p> 15GB Hosting</p>
+                    <p>Limited Support</p>
+                    <button class="buttonrate2">Get Started</button>
+                </div>
+                <div class="rate3">
+                    <h3>$49/month</h3>
+                    <p>1 Website</p>
+                    <p> 50GB Hosting</p>
+                    <p>Limited Support</p>
+                    <button class="ratebutton">Get Started</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
