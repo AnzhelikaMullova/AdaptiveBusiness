@@ -14,7 +14,188 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
     <style>
-        @media screen and (max-width: 767px) {}
+        @media screen and (max-width: 767px) {
+
+            .menu-burger__header {
+                position: relative;
+                width: 40px;
+                height: 35px;
+                display: block;
+
+            }
+
+            .menu-burger__header span,
+            .menu-burger__header:after,
+            .menu-burger__header:before {
+                height: 3px;
+                width: 100%;
+                position: absolute;
+                background: #FF7143;
+                margin: 0 auto;
+            }
+
+            .menu-burger__header span {
+                top: 11px;
+            }
+
+            .menu-burger__header:after,
+            .menu-burger__header:before {
+                content: '';
+            }
+
+            .menu-burger__header:after {
+                bottom: 14px;
+            }
+
+            .menu-burger__header:before {
+                top: 5px;
+            }
+
+
+
+            .header {
+
+                width: 100%;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+                height: 100px;
+                padding: 10px;
+            }
+
+            .header_nav {
+                display: none;
+            }
+
+            .header_buttom {
+                display: none;
+            }
+
+            .section_subscription {
+
+                width: 100%;
+                flex-direction: column;
+
+
+
+            }
+
+            .subscription_image img {
+                display: none;
+            }
+
+
+            .subscription h1 {
+                margin-top: 5px;
+                margin-left: 30px;
+                margin-bottom: 5px;
+                padding: 10px;
+                width: 400px;
+
+
+            }
+
+            .subscription p {
+                margin-top: 0px;
+                margin-left: 30px;
+                padding: 10px;
+                font-weight: 30px;
+                width: 400px;
+            }
+
+            .main_buttom {
+                margin-top: 5px;
+                margin-left: 30px;
+                padding: 10px;
+
+
+            }
+
+            .icon {
+
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                padding: 10px;
+
+            }
+
+            .rate {
+
+                flex-direction: column;
+
+                margin-top: 25px;
+
+            }
+
+            .product {
+
+                width: 100%;
+            }
+
+            .product_h2 {
+
+                flex-direction: column;
+                width: 100%;
+                height: 250px;
+
+
+            }
+
+            .product_h2 h2 {
+                margin-top: 5px;
+
+            }
+
+
+        }
+
+
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .header_buttom {
+                display: none;
+            }
+
+            .header {
+
+                width: 740px;
+
+                justify-content: space-around;
+
+            }
+
+            .section_subscription {
+
+
+                width: 740px;
+                padding: 50px;
+
+            }
+
+            .product_h2 {
+
+                flex-direction: column;
+
+                width: 100%;
+                margin-left: 100px;
+
+                margin-bottom: 50px;
+            }
+
+        }
+
+        @media screen and (min-width: 1024px) {
+            .header {
+                margin: 0 auto;
+            }
+
+        }
+
+
+
+
+
+
 
         .header {
 
@@ -23,8 +204,8 @@
             justify-content: space-between;
             align-items: center;
             margin: 15px 125px 0px 125px;
-            padding: 10px;
 
+            padding: 10px;
 
 
         }
@@ -413,6 +594,9 @@
     <header class="header">
         <div class="header_logo">
             <img src="/assets/image/Logo.svg" alt="Logoipsum">
+        </div>
+        <div class="menu-burger__header">
+            <span></span>
         </div>
 
         <nav class="header_nav">
